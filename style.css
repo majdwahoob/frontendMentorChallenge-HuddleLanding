@@ -1,0 +1,283 @@
+:root {
+    --c1: hsl(322, 100%, 66%);
+
+    --c2: hsl(193, 100%, 96%);
+    --c3: hsl(192, 100%, 9%);
+    --c4: hsl(208, 11%, 55%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-image: url(./images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--c2);
+    padding: 3.5rem;
+    font-family: 'Open Sans', sans-serif;
+    background-size: cover;
+}
+.h-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.h-1 > button {
+    border: 0;
+    background-color: white;
+    font-weight: 600;
+    padding: .8rem 3rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.h-1 > button:hover {
+    opacity: .8;
+}
+.h-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.h-2 > img {
+    max-width: 541px;
+    width: 100%;
+    height: auto;
+}
+.h-2 .h-2-1 {
+    width: 39%;
+}
+.h-2 .h-2-1 h1{
+    font-size: 45px;
+    color: var(--c3);
+    margin-bottom: 1.5rem;
+}
+.h-2 .h-2-1 p {
+    font-size: 18px;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+.h-2 .h-2-1 button {
+    border: 0;
+    background-color: var(--c1);
+    color: white;
+    font-weight: 600;
+    padding: .8rem 3rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.h-2 .h-2-1 button:hover {
+    opacity: .5;
+}
+main {
+    font-family: 'Open Sans', sans-serif;
+    padding: 8rem 4rem 4rem 4rem;
+    position: relative;
+}
+.card {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 130px;
+    padding: 3.5rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+.card > img {
+    max-width: 520px;
+    width: 100%;
+    height: auto;
+}
+.right > img {
+    order: 1;
+}
+.card .card-info {
+    width: 33%;
+}
+.card .card-info h3{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: .8rem;
+}
+.card .card-info p {
+    color: var(--c4);
+    line-height: 1.5rem;
+}
+.flying-card {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 5rem;
+    background-color: white;
+    border-radius: 1rem;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8rem;
+}
+.flying-card h2 {
+    margin-bottom: 1.5rem;
+}
+.flying-card > button {
+    border: 0;
+    background-color: var(--c1);
+    font-weight: 600;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    color: white;
+}
+.flying-card > button:hover {
+    opacity: .5;
+}
+footer {
+    background-color: var(--c3);
+    padding: 8rem 5rem 5rem 5rem;
+    color: white;
+}
+footer > svg {
+    margin-bottom: 1rem;
+}
+footer svg path {
+    fill: white;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.container .f-1 {
+    width: 100%;
+    max-width: 315px;
+}
+.container .f-1 ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+.container .f-1 ul li:first-child {
+    align-items: flex-start;
+}
+.container .f-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 35px);
+    column-gap: 4rem;
+}
+.container .f-2 a {
+    text-decoration: none;
+    color: white;
+}
+.container .f-2 a:hover {
+    text-decoration: underline;
+}
+.container .f-3 a {
+    text-decoration: none;
+    position: relative;
+}
+.container .f-3 a:not(:last-child) {
+    margin-right: 2rem;
+}
+.container .f-3 a::after {
+    content: "";
+    height: 45px;
+    width: 45px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -9px;
+    left: -11px;
+}
+.container .f-3 a:hover svg path,
+.container .f-3 a:hover::after {
+    fill: var(--c1);
+    border-color: var(--c1);
+}
+.copyright {
+    text-align: right;
+    margin-top: 2rem;
+}
+@media (max-width: 1025px) {
+    header {
+        background-image: url(./images/bg-hero-mobile.svg);
+    }
+}
+@media (max-width: 1130px) {
+    .card {
+        justify-content: center;
+    }
+    .right > img {
+        order: 0;
+    }
+    header,
+    main {
+        text-align: center;
+    }
+    .h-2 .h-2-1 {
+        width: 100%;
+    }
+    .h-2-1 > button {
+        width: 100%;
+    }
+}
+@media (max-width: 769px) {
+    header {
+        padding: 1.5rem;
+    }
+    .h-2 .h-2-1 h1 {
+        font-size: 25px;
+    }
+    .h-2 .h-2-1 p {
+        font-size: 17.5px;
+    }
+    .h-1 > img {
+        width: 150px;
+    }
+    .h-1 > button {
+        padding: .4rem 1.7rem;
+    }
+    main {
+        padding: 4rem 2rem 2rem 2rem;
+    }
+    .card .card-info {
+        width: unset;
+    }
+    .flying-card {
+        padding: 2.5rem 2rem;
+        bottom: -6rem;
+    }
+    .flying-card > h2 {
+        font-size: 14px;
+    }
+    .flying-card > button {
+        font-size: 9px;
+    }
+    footer > svg {
+        width: 150px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .container .f-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .container .f-3 {
+        align-self: center;
+    }
+    .copyright {
+        text-align: center;
+        font-size: 11px;
+    }
+}
