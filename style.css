@@ -185,17 +185,17 @@ footer svg path {
     position: relative;
 }
 .container .f-3 a:not(:last-child) {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
 }
 .container .f-3 a::after {
     content: "";
-    height: 45px;
-    width: 45px;
+    height: 30px;
+    width: 30px;
     border: 2px solid white;
     border-radius: 50%;
     position: absolute;
-    bottom: -9px;
-    left: -11px;
+    bottom: -5px;
+    left: -8.5px;
 }
 .container .f-3 a:hover svg path,
 .container .f-3 a:hover::after {
@@ -227,6 +227,7 @@ footer svg path {
     }
     .h-2-1 > button {
         width: 100%;
+        max-width: 50%;
     }
 }
 @media (max-width: 769px) {
